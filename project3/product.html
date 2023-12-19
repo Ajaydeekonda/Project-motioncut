@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <title>JStores</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to JStores</h1>
+    <p>JStores is a top-rated e-commerce platform offering a wide range of products. We are committed to providing our customers with the best shopping experience.</p>
+    </header>
+    <main>
+    <div class="product-row">
+        <div class="product" id="product1">
+            <img src="https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/61ijir6ozPL.jpg" alt="Product 1 Image">
+            <h2>Earphones</h2>
+            <p>wired earphones</p>
+            <p>Price: ₹<span id="price1">279</span></p>
+            <button onclick="addToCart('product1')">Add to Cart</button>
+        </div>
+        <div class="product" id="product2">
+            <img src="https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/51QLU+bV6vL._AC_UF1000,1000_QL80_.jpg" alt="Product 2 Image">
+            <h2>Charger</h2>
+            <p>18w output</p>
+            <p>Price: ₹<span id="price2">599</span></p>
+            <button onclick="addToCart('product2')">Add to Cart</button>
+        </div>
+        <div class="product" id="product3">
+            <img src="https://rukminim2.flixcart.com/image/850/1000/xif0q/pendrive/pendrive/j/t/z/usb-3-0-64gb-pendrive-master-original-imagjyp59xcmrz6a.jpeg?q=90" alt="Product 3 Image">
+            <h2>Pendrive</h2>
+            <p>usb 3.0, 64GB </p>
+            <p>Price: ₹<span id="price3">648</span></p>
+            <button onclick="addToCart('product3')">Add to Cart</button>
+        </div>
+        <div class="product" id="product4">
+            <img src="https://robu.in/wp-content/uploads/2019/08/sandisk-32-gb-card.jpg" alt="Product 4 Image">
+            <h2>SD card</h2>
+            <p>10Mbps, 32GB</p>
+            <p>Price: ₹<span id="price4">399</span></p>
+            <button onclick="addToCart('product4')">Add to Cart</button>
+        </div>
+    </div>
+    <div class="product-row">
+        <div class="product" id="product5">
+            <img src="https://rukminim2.flixcart.com/image/850/1000/kmz7qfk0/external-hard-drive/hdd/i/w/p/externl-drive-kirtida-original-imagfr4z8xfywdgb.jpeg?q=20" alt="Product 5 Image">
+            <h2>Hard Disk</h2>
+            <p>2TB</p>
+            <p>Price: ₹<span id="price5">2999</span></p>
+            <button onclick="addToCart('product5')">Add to Cart</button>
+        </div>
+        <div class="product" id="product6">
+            <img src="https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/61UxfXTUyvL._AC_UF1000,1000_QL80_.jpg" alt="Product 6 Image">
+            <h2>Mouse</h2>
+            <p>wired Mouse</p>
+            <p>Price: ₹<span id="price6">199</span></p>
+            <button onclick="addToCart('product6')">Add to Cart</button>
+        </div>
+        <div class="product" id="product7">
+            <img src="https://rukminim1.flixcart.com/image/850/1000/xif0q/power-bank/0/j/r/lm-pb436-battery-capacity-10000mah-2-usb-ports-4-in-1-cable-ios-original-imagk34um6npezdh.jpeg?q=90" alt="Product 7 Image">
+            <h2>Power Bank</h2>
+            <p>10000mah battery</p>
+            <p>Price: ₹<span id="price7">1099</span></p>
+            <button onclick="addToCart('product7')">Add to Cart</button>
+        </div>
+        <div class="product" id="product8">
+            <img src="https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/61E6E4aQnUL.jpg" alt="Product 8 Image">
+            <h2>Type-B Cable</h2>
+            <p>USB Data Cable</p>
+            <p>Price: ₹<span id="price8">249</span></p>
+            <button onclick="addToCart('product8')">Add to Cart</button>
+        </div>
+    </div>
+    <div id="cart">
+    </div>
+</main>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
